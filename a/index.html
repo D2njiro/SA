@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Vale Restaurante</title>
+    <link rel="stylesheet" href="top.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="nome">
+            <h1>Metal Vale</h1>
+            <h2 class="restaurante">RESTAURANTE CORPORATIVO</h2>
+        </div>
+    </header>
+    <main>
+        <div class="principal">
+            <div class="boas_vindas">
+                <h2>Olá!</h2>
+                <h2>Seja bem-vindo ao Metal Vale!</h2>
+                <p>Consulte o cardápio e faça seu pedido de forma rápida e prática.</p>
+            </div>
+            
+            <div class="cardapio">
+                <div class="alimentos" id="alimentos">
+                    <h3>CARDÁPIO DE HOJE</h3>
+                    <p>Confira as opções do dia</p>
+                    
+                    <h4>Prato principal</h4>
+                    <h5 id="prato_princ">Frango grelhado</h5>
+                    
+                    <h4>Acompanhamentos</h4>
+                    <h5 id="acompanhamento">Arroz + Feijão + Salada</h5>
+                    
+                    <h4>Salada</h4>
+                    <h5 id="salada">Alface e tomate</h5>
+                    
+                    <h4>Sobremesa</h4>
+                    <h5 id="sobremesa">Fruta</h5>  
+                </div>
+                
+                <div class="menu"></div>
+                <button type="button" class="btn" id="gerar">ORGANIZAR CARDÁPIO</button>    
+            </div>
+
+            <div class="QR">
+                <div class="code"></div>
+                <div class="info">
+                    <h6>ACESSE PELO SEU CELULAR</h6>
+                    <p>Apresente o QR code no scanner do restaurante para retirar seu almoço!</p>
+                </div>
+            </div>
+
+            <div class="opc">
+                <div class="block"><h4>CARDÁPIO</h4></div>
+                <div class="block"><h4>MEUS PEDIDOS</h4></div>
+                <div class="block"><h4>HORÁRIOS</h4></div>
+                <div class="block"><h4>LOCALIZAÇÃO</h4></div>
+            </div>
+
+            <div class="horario">
+                <h5 class="horari">HORÁRIO DE ATENDIMENTO</h5>
+                <p>Segunda a Sexta-feira</p>
+                <p class="hora" id="horario">11h às 14h</p>
+            </div>
+
+            <div>
+                <button class="btn_foot" type="button">Fique atento às novidades e comunicados!</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </main>
+</body>
+</html>
