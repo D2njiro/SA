@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "rubik", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(195deg, #eae2b7,#e9c46a,#f77f00,#c44900,#d62828 );
+    font-weight: 100;
+}
+.conteiner{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #ffe5d9;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+    border: 1px solid #780116;
+}
+.conteiner h2{
+    text-align: center;
+}
+
