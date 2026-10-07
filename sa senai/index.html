@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Vale Restaurante</title>
+    <link rel="stylesheet" href="top.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><i></i></div>
+        <div class="nome">
+            <h1>Metal Vale</h1>
+            <h2 class="restaurante">RESTAURANTE CORPORATIVO</h2>
+        </div>
+    </header>
+    <main>
+        <div class="principal">
+            <div class="boas_vindas">
+                <h2>Olá!</h2>
+                <h2>Seja bem-vindo ao Metal Vale!</h2>
+                <p>Consulte o cardápio e faça seu pedido de forma rápida e prática.</p>
+            </div>
+            
+            <div class="cardapio">
+                <div class="alimentos">
+                    <h3>CARDÁPIO DE HOJE</h3>
+                    <p>Confira as opções do dia</p>
+                    <h4>Prato principal</h4>
+                    <h5 id="prato_princ">Frango grelhado</h5>
+                    <h4>Acompanhamentos</h4>
+                    <h5 id="acompanhamento">Arroz + Feijão + Salada</h5>
+                    <h4>Salada</h4>
+                    <h5>Alface e tomate</h5>
+                    <h4>Sobremesa</h4>
+                    <h5 id="sobremesa">Fruta</h5>  
+                </div>
+                
+                <div class="menu" id="menu_opcoes">
+                    <!-- O cardápio completo aparece aqui -->
+                </div>
+                <button type="button" class="btn" id="botao" onclick="mostrarCardapio()">VER CARDÁPIO COMPLETO</button>
+
+                <!-- Área de Pedidos adicionada para fazer a interação -->
+                <div style="margin-top: 15px;">
+                    <h3>FAZER PEDIDO</h3>
+                    <input type="text" id="nome_cliente" placeholder="Seu nome">
+                    <input type="text" id="prato_escolhido" placeholder="Nome do prato">
+                    <input type="number" id="qtd_prato" placeholder="Quantidade">
+                    <button type="button" class="btn" onclick="fazerPedido()">Enviar Pedido</button>
+                </div>
+
+                <!-- Resultado dos pedidos -->
+                <div id="resultado" style="margin-top: 15px; font-weight: bold;"></div>
+            </div>
+
+            <div class="QR">
+                <div class="code"></div>
+                <div class="info">
+                    <h6>ACESSE PELO SEU CELULAR</h6>
+                    <p>Apresente o QRcode no scaner do restaurante para retirar seu almoço!</p>
+                </div>
+            </div>
+
+            <div class="opc">
+                <div class="block"><h4>CARDÁPIO</h4></div>
+                <div class="block"><h4>MEUS PEDIDOS</h4></div>
+                <div class="block"><h4>HORÁRIOS</h4></div>
+                <div class="block"><h4>LOCALIZAÇÃO</h4></div>
+            </div>
+
+            <div class="horario">
+                <h5 class="horari">HORÁRIO DE ATENDIMENTO</h5>
+                <p>Segunda a Sexta-feira</p>
+                <p class="hora" id="horario">11h às 14h</p>
+            </div>
+
+            <div>
+                <button class="btn_foot" type="submit">Fique atento às novidades e comunicados!</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="sla.js"></script>
+</body>
+</html>
