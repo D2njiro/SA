@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+:root{
+    --BG1: #e1e1e1;
+    --BG2: #a5a5a5;
+    --BG3: #6d6d6d;
+    --BG4: #3a3a3a;
+    --BG5: #090909;
+    --FontBlack:#2F2F2F;
+    --FontWhite:#f3f3f3;
+    --Border:#1a191b;
+}
 *{
     padding: 0;
     margin: 0;
@@ -12,18 +21,35 @@ body{
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(195deg, #eae2b7,#e9c46a,#f77f00,#c44900,#d62828 );
-    font-weight: 100;
+    background: radial-gradient(circle at 120% -20%, var(--BG1),var(--BG2),var(--BG3),var(--BG4),var(--BG5));
 }
 .conteiner{
     background-color: transparent;
     backdrop-filter: blur(20px);
-    color: #ffe5d9;
+    color: var(--FontWhite);
     padding: 2.5em 1.5em;
     border-radius: 1em;
-    border: 1px solid #780116;
+    border: 1px solid var(--Border);
+    backdrop-filter: blur(5px);
 }
 .conteiner h2{
     text-align: center;
+}
+.remember-forgot {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 20px;
+}
+.remember-forgot label input {
+    accent-color: #000000;
+    margin-right: 4px;
+}
+.remember-forgot,a{
+    color: #090909;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
 }
 
