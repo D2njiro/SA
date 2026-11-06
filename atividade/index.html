@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Vale - Alimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="login">
+        <h2>Metal Vale</h2>
+
+        <form action="" onsubmit="login(); return false">
+            <label>
+                Matricula
+                <input type="text" required id="matricula">
+            </label>
+
+            <label>
+                Senha
+                <input type="password" required id="senha">
+            </label>
+
+            <section class="remember-forgot">
+                <label><input type="checkbox"> Lembrar senha</label>
+                <a href="#">Esqueceu sua senha?</a>
+            </section>
+
+            <button type="submit" class="btn">Entrar</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="dados.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --BG1: #072D40;
+    --BG2: #025982;
+    --BG-C: #003554;
+    --FontBlack: #2F2F2F;
+    --FontWhite: #f3f3f3;
+    --Border: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    min-height: 100vh;
+    background: radial-gradient(circle at 120% -20%, var(--BG1), var(--BG2));
+}
+
+/* Antigo .conteiner, agora é o próprio <main class="login"> */
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(70em, calc(100% - 2em));
+    min-height: 55em;
+    margin-right: 1em;
+    padding: 2em;
+    color: var(--FontWhite);
+    background-color: var(--BG-C);
+    backdrop-filter: blur(5px);
+    border: 0.5px solid var(--Border);
+    border-radius: 1em;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+}
+
+/* Formulário */
+.login form {
+    width: 100%;
+    max-width: 24em;
+    text-align: left;
+}
+
+.login form > label {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    display: block;
+    width: 100%;
+    margin-top: 0.4em;
+    padding: 0.7em 0.9em;
+    font-size: 1em;
+    color: var(--FontBlack);
+    background-color: var(--FontWhite);
+    border: 1px solid var(--Border);
+    border-radius: 0.5em;
+    outline: none;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+    border-color: var(--BG2);
+    box-shadow: 0 0 0 3px rgba(2, 89, 130, 0.5);
+}
+
+/* Lembrar senha / Esqueceu a senha */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2em 0;
+    font-size: 0.9em;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot input {
+    accent-color: var(--BG2);
+    margin-right: 0.4em;
+}
+
+.remember-forgot a {
+    color: var(--FontWhite);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 0.8em;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--FontWhite);
+    background-color: var(--BG2);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn:hover {
+    filter: brightness(1.15);
+}
